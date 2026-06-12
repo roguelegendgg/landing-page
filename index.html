@@ -1,98 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rogue Legend</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0b0f;
-      color: white;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rogue Legend</title>
 
-    header {
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #111, #1a1a2e);
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-    h1 {
-      font-size: 48px;
-      margin: 0;
-      letter-spacing: 2px;
-    }
+body {
+  background: #05050a;
+  color: #ffffff;
+}
 
-    p {
-      font-size: 18px;
-      opacity: 0.8;
-      max-width: 600px;
-      margin: 20px auto;
-    }
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #1b1b2e, #000);
+  padding: 20px;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #ff003c;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
+.hero h1 {
+  font-size: 54px;
+  letter-spacing: 3px;
+}
 
-    .section {
-      padding: 60px 20px;
-    }
+.hero p {
+  max-width: 600px;
+  margin-top: 15px;
+  opacity: 0.75;
+  line-height: 1.5;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+.cta {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    .card {
-      background: #16161d;
-      padding: 20px;
-      border-radius: 10px;
-    }
+.cta a {
+  padding: 12px 20px;
+  background: #ff2e63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
 
-    footer {
-      padding: 30px;
-      font-size: 14px;
-      opacity: 0.6;
-    }
-  </style>
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #141427;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #222;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* SOCIAL BUTTONS */
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social a {
+  padding: 12px 18px;
+  background: #1d1d2f;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 14px;
+}
+</style>
+
 </head>
-
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
   <h1>ROGUE LEGEND</h1>
-  <p>Built for gamers, streamers, and creators who move different. Join the movement.</p>
-  <a class="btn" href="https://instagram.com/roguelegendofficial" target="_blank">Follow on Instagram</a>
-</header>
+  <p>
+    Forge your legacy in competitive gaming, streaming, and content creation.
+    Build your identity. Build your squad. Become legendary.
+  </p>
 
-<section class="section">
-  <h2>What We Do</h2>
+  <div class="cta">
+    <a href="#watch">Watch Live</a>
+    <a href="#join">Join Community</a>
+    <a href="#content">Explore Content</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>ABOUT</h2>
+  <p style="max-width:700px;margin:0 auto;opacity:.8;line-height:1.6;">
+    Rogue Legend is a gaming brand built around competitive FPS, extraction shooters,
+    and community-driven content. Built for players who grind, compete, and create.
+  </p>
+</section>
+
+<!-- GAMES -->
+<section>
+  <h2>GAMES WE PLAY</h2>
   <div class="grid">
-    <div class="card">Gaming Content</div>
-    <div class="card">Streaming Highlights</div>
-    <div class="card">Community Drops</div>
-    <div class="card">Brand Collabs</div>
+    <div class="card">
+      <h3>Extraction</h3>
+      <p>Tarkov, Arc Raiders, Marathon</p>
+    </div>
+    <div class="card">
+      <h3>Competitive FPS</h3>
+      <p>CS2, Valorant, Fortnite</p>
+    </div>
+    <div class="card">
+      <h3>Battle Royale</h3>
+      <p>Apex Legends, Warzone</p>
+    </div>
+    <div class="card">
+      <h3>Content & Streams</h3>
+      <p>Twitch, YouTube, Shorts</p>
+    </div>
   </div>
 </section>
 
-<section class="section">
-  <h2>Join the Brand</h2>
-  <p>Rogue Legend is a gaming identity built around skill, mindset, and presence.</p>
+<!-- CONTENT HUB -->
+<section id="content">
+  <h2>CONTENT HUB</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Live Streams</h3>
+      <p>Watch gameplay, ranked grinds, and raids.</p>
+    </div>
+    <div class="card">
+      <h3>Clips</h3>
+      <p>Highlights, wipes, and highlights reels.</p>
+    </div>
+    <div class="card">
+      <h3>Community</h3>
+      <p>Discord events, squads, and updates.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<section id="join">
+  <h2>CONNECT</h2>
+  <div class="social">
+    <a href="https://instagram.com/roguelegendofficial">Instagram</a>
+    <a href="#">Twitch</a>
+    <a href="#">YouTube</a>
+    <a href="#">Discord</a>
+    <a href="#">TikTok</a>
+  </div>
 </section>
 
 <footer>
-  © 2026 Rogue Legend
+  © Rogue Legend. All Rights Reserved.
 </footer>
 
 </body>
